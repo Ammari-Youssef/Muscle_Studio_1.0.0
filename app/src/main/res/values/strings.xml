@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Muscle_Studio_1.0.0</string>
+
+    <string-array name="Login">
+        <item></item>
+    </string-array>
+
+    <string name="CoachInterfaceDesc">There are our five coaches (Men Only)</string>
+    <string name="coach1">Jamal rochdi</string>
+    <string name="coach2">Jamal rochdi</string>
+    <string name="coach3">Jamal rochdi</string>
+    <string name="coach4">Jamal rochdi</string>
+    <string name="coach5">Jamal rochdi</string>
+
+    <string name="desc_coach1">Jamal is the ideal coach for building pectoralis muscles .</string>
+    <string name="desc_coach2"></string>
+    <string name="desc_coach3"></string>
+    <string name="desc_coach4"></string>
+    <string name="desc_coach5"></string>
+
+    <string name="offer1_desc"></string>
+    <string name="offer2_desc"></string>
+    <string name="offer3_desc"></string>
+    <string name="offer4_desc"></string>
+
+
+</resources>

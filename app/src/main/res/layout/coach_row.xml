@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@color/red"/>
+
+    <TextView
+        android:id="@+id/NomCoach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Coach" />
+
+    <TextView
+        android:id="@+id/description_coach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NomCoach"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/img"
+
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:singleLine="true"
+        android:maxLength="50"
+
+        android:text="Desc" />
+
+
+</RelativeLayout>
