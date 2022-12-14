@@ -18,10 +18,10 @@
     <string name="desc_coach4"></string>
     <string name="desc_coach5"></string>
 
-    <string name="offer1_desc"></string>
-    <string name="offer2_desc"></string>
-    <string name="offer3_desc"></string>
-    <string name="offer4_desc"></string>
+    <string name="offer1_desc">This offer save you 10% if you renew the subscription every month during a year</string>
+    <string name="offer2_desc">This offer save you 5% if you renew the subscription every month in a half year</string>
+    <string name="offer3_desc">This offer save you 3% if you renew the subscription every month for Three months</string>
+    <string name="offer4_desc">Subscribe to MuscleStudio for 70MAD a month </string>
 
 
 </resources>
