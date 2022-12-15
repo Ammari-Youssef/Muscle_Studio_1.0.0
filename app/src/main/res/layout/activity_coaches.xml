@@ -13,22 +13,22 @@
         android:layout_height="wrap_content"
         android:text="@string/CoachInterfaceDesc"
         android:singleLine="false"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         android:layout_gravity="center" />
 
     <ListView
         android:id="@+id/ListViewCoaches"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
 
 
-<Button
-    android:id="@+id/NoCoachBtn"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Continue without a coach"
+    <Button
+        android:id="@+id/NoCoachBtn"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:text="Continue without a coach"
 
-    />
+        />
 
 </LinearLayout>

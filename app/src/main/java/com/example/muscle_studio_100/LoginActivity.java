@@ -87,10 +87,14 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(this, "Authentification Succeeded", Toast.LENGTH_SHORT).show();
                 Toast.makeText(this, "Welcome", Toast.LENGTH_SHORT).show();
 
-                //Envoyer le nom d'utilisateur
+                //Envoyer le nom d'utilisateur à l'activité qui gère l'interface des offres
                 Intent offersIntent = new Intent(LoginActivity.this , OffersActivity.class);
+                Intent RecapIntent = new Intent(LoginActivity.this , RecapActivity.class);
+
                 offersIntent.putExtra("profile" , user);
-              //  Allez à la vue prochaine
+                RecapIntent.putExtra("profile" , user);
+
+                //Allez à la vue prochaine
                 startActivity(offersIntent);
             }else {
 

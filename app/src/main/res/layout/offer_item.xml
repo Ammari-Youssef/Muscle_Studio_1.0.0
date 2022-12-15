@@ -21,27 +21,22 @@
             android:id="@+id/subtype"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="40"
-            android:padding="5dp"
+            android:layout_weight="50"
+            android:padding="15dp"
             android:text="TypeofSubscription" />
 
         <TextView
             android:id="@+id/subbill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="40"
+            android:layout_weight="50"
 
-            android:padding="5dp"
+            android:padding="15dp"
             android:text="99.99$"
 
             />
 
-        <CheckBox
-            android:id="@+id/pickbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pick"
-            android:textAllCaps="false"/>
+
 
     </LinearLayout>
 

@@ -41,7 +41,7 @@ public class OffersActivity extends AppCompatActivity {
         //Remplir et affichage la ListView
         ArrayList<Offer> arr = new ArrayList<>();
 
-        arr.add(new Offer("yearly", "840 MAD"));
+        arr.add(new Offer("Yearly", "840 MAD"));
         arr.add(new Offer("Six months", "420MAD"));
         arr.add(new Offer("Three months", "200MAD"));
         arr.add(new Offer("Monthly", "70MAD"));
@@ -50,7 +50,7 @@ public class OffersActivity extends AppCompatActivity {
         OfferAdapter ad = new OfferAdapter(this, R.layout.offer_item, arr);
         lvo.setAdapter(ad);
         //Choisir un seul type d'abonnement
-        //lvo.setChoiceMode(ListView.);
+
 
         lvo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -63,9 +63,11 @@ public class OffersActivity extends AppCompatActivity {
                         startActivity(new Intent(OffersActivity.this , Offer2Activity.class));
                         break;
                     case 2:
+                        startActivity(new Intent(OffersActivity.this , Offer3Activity.class));
 
                         break;
                     case 3:
+                        startActivity(new Intent(OffersActivity.this , Offer4Activity.class));
 
                         break;
 
@@ -79,9 +81,4 @@ public class OffersActivity extends AppCompatActivity {
 
 
 
-    private void btnCheck(View v) {
-      /*  int idbtn =Ra
-        RadioButton btn = findViewById();
-    */
-    }
 }

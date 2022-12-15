@@ -66,6 +66,7 @@ public class ForgotpwdActivity extends AppCompatActivity {
         }
     }
 
+    //Fonction qui fait and highlight dans l'EditText ayant une erreur
     private void showError(EditText input, String s) {
         input.setError(s);
         input.requestFocus();

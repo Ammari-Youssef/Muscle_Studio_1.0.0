@@ -5,7 +5,7 @@
         <item></item>
     </string-array>
 
-    <string name="CoachInterfaceDesc">There are our five coaches (Men Only)</string>
+    <string name="CoachInterfaceDesc">There are our five men coaches for now ,we will have women soon </string>
     <string name="coach1">Jamal rochdi</string>
     <string name="coach2">Jamal rochdi</string>
     <string name="coach3">Jamal rochdi</string>
@@ -22,6 +22,7 @@
     <string name="offer2_desc">This offer save you 5% if you renew the subscription every month in a half year</string>
     <string name="offer3_desc">This offer save you 3% if you renew the subscription every month for Three months</string>
     <string name="offer4_desc">Subscribe to MuscleStudio for 70MAD a month </string>
+
 
 
 </resources>

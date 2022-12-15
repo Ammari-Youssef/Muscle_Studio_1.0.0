@@ -26,7 +26,8 @@ public class DBHelper extends SQLiteOpenHelper
 
     @Override
     public void onCreate(SQLiteDatabase MonBDD) {
-        String query = "CREATE TABLE users(username TEXT primary key , password TEXT )";
+        String query = "CREATE TABLE users(username TEXT primary key , password TEXT ,subscription_mode TEXT ," +
+                "assigned_coach TEXT default 'none' )";
         MonBDD.execSQL(query);
     }
 
@@ -35,6 +36,7 @@ public class DBHelper extends SQLiteOpenHelper
         MonBDD.execSQL("DROP TABLE if exists users");
     }
 
+    //Les fonctions login/register/editpassword :
     public Boolean insertData(String username , String password){
         SQLiteDatabase MonBDD = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -53,7 +55,7 @@ public class DBHelper extends SQLiteOpenHelper
         long result = db.update("users",cv , "username=?",new String[]{user});
         return result != -1;
     }
-    //Fonction qui modifier les données de la bdd
+    //Fonction qui modifier le mot de passe de la bdd
     public Boolean updateUser(String user , String pass)
     {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -80,7 +82,36 @@ public class DBHelper extends SQLiteOpenHelper
 
         if(cursor.getCount() > 0 ) return true ;
         else return false ;
+
     }
+
+    //Les fonctions de recap (enroll)
+    //Fonction qui insere les donnees recaputilative de l'utilisateur concerné dans la BDD
+
+    public Boolean InsertRecapData(String username , String subscription ,String CoachName  )
+    {
+       SQLiteDatabase db = this.getWritableDatabase();
+       ContentValues cv = new ContentValues();
+       cv.put("subscription_mode",subscription);
+       cv.put("assigned_coach",CoachName);
+
+       long result = db.insert("users" ,  null,cv );
+
+       return result !=-1;
+
+    }
+
+    public Boolean UpdateRecapData(String username , String subscription ,String CoachName  ) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("subscription_mode", subscription);
+        cv.put("assigned_coach", CoachName);
+
+        long result = db.update("users", cv, "username=?", new String[]{username});
+
+        return result != -1;
+    }
+
 
 
 }

@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class CoachesActivity extends AppCompatActivity {
 
     ListView lvc;
+    Button noCoachbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class CoachesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_coaches);
 
         lvc = findViewById(R.id.ListViewCoaches);
-
+        noCoachbtn = findViewById(R.id.NoCoachBtn);
 
         //Creer les informations
         ArrayList<Coach> arraytest = new ArrayList<>();
@@ -32,25 +33,6 @@ public class CoachesActivity extends AppCompatActivity {
         arraytest.add(new Coach(R.drawable.coach3, "Joj Gauchiyat", "Age:27  Prix : 200DH"));
         arraytest.add(new Coach(R.drawable.coach4, "Allal el fassi", "Age:21  Prix : 200DH"));
         arraytest.add(new Coach(R.drawable.coach1, "Jilali Yahya", "Age:33  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach2, "Hakim Ziach ", "Age:25  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach3, "Joj Gauchiyat", "Age:27  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach4, "Allal el fassi", "Age:21  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach1, "Jilali Yahya", "Age:33  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach2, "Hakim Ziach ", "Age:25  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach3, "Joj Gauchiyat", "Age:27  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach4, "Allal el fassi", "Age:21  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach1, "Jilali Yahya", "Age:33  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach2, "Hakim Ziach ", "Age:25  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach3, "Joj Gauchiyat", "Age:27  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach4, "Allal el fassi", "Age:21  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach1, "Jilali Yahya", "Age:33  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach2, "Hakim Ziach ", "Age:25  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach3, "Joj Gauchiyat", "Age:27  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach4, "Allal el fassi", "Age:21  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach1, "Jilali Yahya", "Age:33  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach2, "Hakim Ziach ", "Age:25  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach3, "Joj Gauchiyat", "Age:27  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach4, "Allal el fassi", "Age:21  Prix : 200DH"));
 
         //Adaptateur Modifié
         CoachAdapter adapter = new CoachAdapter(this, R.layout.coach_row, arraytest);
@@ -88,5 +70,16 @@ public class CoachesActivity extends AppCompatActivity {
 
             }
         });
+
+        noCoachbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goTOrecap=new Intent(CoachesActivity.this , RecapActivity.class);
+                goTOrecap.putExtra("NoCoach","null");
+                startActivity(goTOrecap);
+            }
+        });
     }
+
+
 }
