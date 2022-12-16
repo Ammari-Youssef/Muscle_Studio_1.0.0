@@ -4,36 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:weightSum="100"
     tools:context=".Coach4Activity">
 
     <ImageView
         android:id="@+id/C1imageView"
-        android:layout_width="55dp"
-        android:layout_height="89dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_weight="50"
-        android:src="@drawable/coach3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+
+        android:src="@drawable/coach4"
+        android:contentDescription="coach" />
 
     <TextView
         android:id="@+id/coachName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textColor="@color/white"
         android:layout_gravity="center"
-        android:text="@string/coach1"
-        style="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/C1imageView" />
+        android:text="@string/coach4"
+        style="@style/TextAppearance.AppCompat.Title"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         style="@style/TextAppearance.AppCompat.Title"
         android:textSize="18sp"
         android:text="Description : "/>
@@ -41,7 +40,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/desc_coach1"
+        android:textColor="@color/white"
+        android:text="@string/desc_coach4"
         android:textStyle="bold"
         style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
         android:paddingTop="20dp"/>
