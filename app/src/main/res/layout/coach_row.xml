@@ -15,6 +15,7 @@
         android:id="@+id/NomCoach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@id/img"
@@ -23,6 +24,7 @@
     <TextView
         android:id="@+id/description_coach"
         android:layout_width="wrap_content"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_below="@id/NomCoach"
         android:layout_marginLeft="20dp"

@@ -22,7 +22,6 @@ public class RecapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recap);
 
-        Intent i = getIntent();
 
         coach_recap = findViewById(R.id.ChosenCoachRecap);
         offer_submode = findViewById(R.id.ModeSubRecap);
@@ -31,16 +30,19 @@ public class RecapActivity extends AppCompatActivity {
         editbtn = findViewById(R.id.RecapEditBtn);
 
         //Recevoir les donnees d'autre activités
+        Intent i = getIntent();
+
         String submode = i.getStringExtra("Subscription_Offer");
         String coachname = i.getStringExtra("Coach");
         String username = i.getStringExtra("profile");
 
-        //
+        //Montrer les choix d'utilisateur:
+        //1. L'offre
         offer_submode.setText(submode);
+        //2.Le coach
         if (coachname != null) {
             coach_recap.setText(coachname);
-        }
-        else {
+        } else {
             coach_recap.setText("No coach selected");
         }
 
@@ -73,7 +75,8 @@ public class RecapActivity extends AppCompatActivity {
             Toast.makeText(this, user + " your activities has been saved", Toast.LENGTH_SHORT).show();
 
             Toast.makeText(this, "Thank you for choosing us ", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(RecapActivity.this , TimeTableActivity.class));
+            Toast.makeText(this, "Here is the time table for our costumers", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(RecapActivity.this, TimeTableActivity.class));
         } else {
             Toast.makeText(this, "Something went wrong ", Toast.LENGTH_SHORT).show();
         }

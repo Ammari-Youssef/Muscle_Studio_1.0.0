@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 public class DBHelper extends SQLiteOpenHelper
 {
 
-   /* public static final String DBName = "Login.db";
+  public static final String DBName = "Login.db";
     public static final String TableName = "users";
-    public static final String UserName = "usersname";
+    public static final String UserName = "username";
     public static final String Password = "password";
-*/
+
 
     public DBHelper(Context context) {
         super(context, "Login.db", null, 1);
@@ -112,6 +112,24 @@ public class DBHelper extends SQLiteOpenHelper
         return result != -1;
     }
 
+public Boolean InsertCoach(String username ,String coach  )
+{
+    SQLiteDatabase MonBDD = this.getWritableDatabase();
+    ContentValues cv = new ContentValues();
+    cv.put("assigned_coach" , coach);
+
+    long result = MonBDD.update("users", cv, "username=?", new String[]{username});
+    return result != -1;
+}
+
+    public Boolean InsertOffer(String username, String offer) {
+        SQLiteDatabase MonBDD = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("subscription_mode", offer);
+
+        long result = MonBDD.update("users", cv, "username=?", new String[]{username});
+        return result != -1;
+    }
 
 
 }

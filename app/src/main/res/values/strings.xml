@@ -5,14 +5,14 @@
         <item></item>
     </string-array>
 
-    <string name="CoachInterfaceDesc">There are our five men coaches for now ,we will have women soon </string>
+    <string name="CoachInterfaceDesc">Here are our five male coaches for now ,we will have female coaches soon stay tuned ! </string>
     <string name="coach1">Jamal Rochdi</string>
     <string name="coach2">Youssef Ghasi</string>
     <string name="coach3">George Johnson</string>
     <string name="coach4">Yassine Abad</string>
     <string name="coach5">Robert Davis</string>
 
-    <string name="desc_coach1">Jamal is the ideal coach for building pectoralis muscles .</string>
+    <string name="desc_coach1">Best coach for building pectoralis muscles .</string>
     <string name="desc_coach2">Best fitness instructor for accountability: Personal trainer .</string>
     <string name="desc_coach3">Best fitness instructor for weight loss: Specialty instructor .</string>
     <string name="desc_coach4">Developing fitness training programs based on the client’s needs .</string>

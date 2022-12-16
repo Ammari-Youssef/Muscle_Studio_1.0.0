@@ -2,7 +2,8 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
 
 
     <TableRow
@@ -16,7 +17,8 @@
             android:layout_column="1"
             android:padding="10sp"
             android:text="08h->10h"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView"
@@ -24,7 +26,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="10h->12h"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView16"
@@ -32,7 +35,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="12h->18h"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView15"
@@ -40,7 +44,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="18h->22h"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
     </TableRow>
 
@@ -54,7 +59,9 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="Monday"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView41"
@@ -72,6 +79,7 @@
             android:layout_span="2"
             android:gravity="center"
             android:padding="10sp"
+            android:textColor="@android:color/white"
             android:text="BodyBuilding" />
 
     </TableRow>
@@ -86,7 +94,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="Tuesday"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView46"
@@ -109,7 +118,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="Wednesday"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView50"
@@ -118,6 +128,7 @@
             android:layout_span="2"
             android:gravity="center"
             android:padding="10sp"
+            android:textColor="@android:color/white"
             android:text="Yoga" />
 
         <TextView
@@ -141,7 +152,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="Thursday"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView55"
@@ -158,6 +170,7 @@
             android:layout_height="wrap_content"
             android:layout_span="2"
             android:gravity="center"
+            android:textColor="@android:color/white"
             android:padding="10sp"
             android:text="BodyBuilding" />
 
@@ -173,7 +186,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="Friday"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView60"
@@ -195,7 +209,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="Saturday"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView65"
@@ -211,6 +226,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10sp"
+            android:textColor="@android:color/white"
             android:text="Yoga" />
 
     </TableRow>
@@ -225,7 +241,8 @@
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:text="Sunday"
-            android:textColor="@android:color/black" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/textView70"
@@ -233,6 +250,7 @@
             android:layout_height="wrap_content"
             android:layout_span="4"
             android:gravity="center"
+            android:textColor="@android:color/white"
             android:padding="10sp"
             android:text="BodyBuilding" />
 

@@ -6,32 +6,36 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     android:orientation="vertical"
-    tools:context=".CoachesActivity"
-    >
-
+    tools:context=".CoachesActivity">
 
 
     <ListView
         android:id="@+id/ListViewCoaches"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/CoachInterfaceDesc"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
 
 
     <Button
         android:id="@+id/NoCoachBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:background="@drawable/btn_bg"
         android:text="Continue without a coach"
 
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/CoachInterfaceDesc"
-        android:singleLine="false"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
+
 </LinearLayout>

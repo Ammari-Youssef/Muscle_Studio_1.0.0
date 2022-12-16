@@ -35,8 +35,8 @@ public class OffersActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        /*String userIntent = intent.getStringExtra("profile");
-        txt.setText("Hi " + userIntent);*/
+        String userIntent = intent.getStringExtra("profile");
+        //txt.setText("Hi " + userIntent);
 
         //Remplir et affichage la ListView
         ArrayList<Offer> arr = new ArrayList<>();
@@ -57,16 +57,24 @@ public class OffersActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 switch (position) {
                     case 0:
+                        Intent o1=new Intent(OffersActivity.this , Offer1Activity.class);
+                        o1.putExtra("profile",userIntent);
                         startActivity(new Intent(OffersActivity.this , Offer1Activity.class));
                         break;
                     case 1:
+                        Intent o2=new Intent(OffersActivity.this , Offer2Activity.class);
+                        o2.putExtra("profile",userIntent);
                         startActivity(new Intent(OffersActivity.this , Offer2Activity.class));
                         break;
                     case 2:
+                        Intent o3=new Intent(OffersActivity.this , Offer3Activity.class);
+                        o3.putExtra("profile",userIntent);
                         startActivity(new Intent(OffersActivity.this , Offer3Activity.class));
 
                         break;
                     case 3:
+                        Intent o4=new Intent(OffersActivity.this , Offer4Activity.class);
+                        o4.putExtra("profile",userIntent);
                         startActivity(new Intent(OffersActivity.this , Offer4Activity.class));
 
                         break;

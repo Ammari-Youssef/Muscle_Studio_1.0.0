@@ -24,9 +24,18 @@ public class Coach3Activity extends AppCompatActivity {
         hireC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent addtorecap = new Intent(Coach3Activity.this , RecapActivity.class);
-                addtorecap.putExtra("Coach" , NmCoach.getText().toString());
-                Toast.makeText(Coach3Activity.this, "You can see this coach in Recap field", Toast.LENGTH_SHORT).show();
+                //Recevoir les donnees
+                Intent a = getIntent();
+                String user = a.getStringExtra("profile");
+                String offer = a.getStringExtra("Subscription_Offer");
+                //Les envoyer au vue suivante avec le nom du coach
+                Intent addtorecap = new Intent(Coach3Activity.this, RecapActivity.class);
+                addtorecap.putExtra("Coach", NmCoach.getText().toString());
+                addtorecap.putExtra("profile", user);
+                addtorecap.putExtra("Subscription_Offer", offer);
+
+                Toast.makeText(Coach3Activity.this, "You have chosen the third coach.", Toast.LENGTH_SHORT).show();
+                startActivity(addtorecap);
             }
         });
 
