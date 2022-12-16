@@ -1,11 +1,9 @@
 <resources>
     <string name="app_name">Muscle_Studio_1.0.0</string>
 
-    <string-array name="Login">
-        <item></item>
-    </string-array>
 
-    <string name="CoachInterfaceDesc">Here are our five male coaches for now ,we will have female coaches soon stay tuned ! </string>
+
+    <string name="CoachInterfaceDesc">Select one of our five male coaches staff do not worry we will have female coaches soon stay tuned ! </string>
     <string name="coach1">Jamal Rochdi</string>
     <string name="coach2">Youssef Ghasi</string>
     <string name="coach3">George Johnson</string>

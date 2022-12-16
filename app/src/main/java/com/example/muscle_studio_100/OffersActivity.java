@@ -36,7 +36,7 @@ public class OffersActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         String userIntent = intent.getStringExtra("profile");
-        //txt.setText("Hi " + userIntent);
+        //txt.setText( userIntent + " Choose an offer");
 
         //Remplir et affichage la ListView
         ArrayList<Offer> arr = new ArrayList<>();
@@ -59,23 +59,23 @@ public class OffersActivity extends AppCompatActivity {
                     case 0:
                         Intent o1=new Intent(OffersActivity.this , Offer1Activity.class);
                         o1.putExtra("profile",userIntent);
-                        startActivity(new Intent(OffersActivity.this , Offer1Activity.class));
+                        startActivity(o1);
                         break;
                     case 1:
                         Intent o2=new Intent(OffersActivity.this , Offer2Activity.class);
                         o2.putExtra("profile",userIntent);
-                        startActivity(new Intent(OffersActivity.this , Offer2Activity.class));
+                        startActivity(o2);
                         break;
                     case 2:
                         Intent o3=new Intent(OffersActivity.this , Offer3Activity.class);
                         o3.putExtra("profile",userIntent);
-                        startActivity(new Intent(OffersActivity.this , Offer3Activity.class));
+                        startActivity(o3);
 
                         break;
                     case 3:
                         Intent o4=new Intent(OffersActivity.this , Offer4Activity.class);
                         o4.putExtra("profile",userIntent);
-                        startActivity(new Intent(OffersActivity.this , Offer4Activity.class));
+                        startActivity(o4);
 
                         break;
 

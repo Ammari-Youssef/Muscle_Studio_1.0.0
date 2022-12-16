@@ -102,6 +102,8 @@ public class CoachesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goTOrecap = new Intent(CoachesActivity.this, RecapActivity.class);
                 goTOrecap.putExtra("NoCoach", "null");
+                goTOrecap.putExtra("Subscription_Offer",offer);
+                goTOrecap.putExtra("profile",user);
                 startActivity(goTOrecap);
             }
         });

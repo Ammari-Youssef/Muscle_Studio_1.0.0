@@ -89,10 +89,9 @@ public class LoginActivity extends AppCompatActivity {
 
                 //Envoyer le nom d'utilisateur à l'activité qui gère l'interface des offres
                 Intent offersIntent = new Intent(LoginActivity.this , OffersActivity.class);
-                Intent RecapIntent = new Intent(LoginActivity.this , RecapActivity.class);
 
                 offersIntent.putExtra("profile" , user);
-                RecapIntent.putExtra("profile" , user);
+
 
                 //Allez à la vue prochaine
                 startActivity(offersIntent);
