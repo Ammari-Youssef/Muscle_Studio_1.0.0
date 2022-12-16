@@ -24,7 +24,7 @@ public class Coach2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent addtorecap = new Intent(Coach2Activity.this , RecapActivity.class);
-                addtorecap.putExtra("Coach" , NmCoach.getText());
+                addtorecap.putExtra("Coach" , NmCoach.getText().toString());
                 Toast.makeText(Coach2Activity.this, "You can see this coach in Recap field", Toast.LENGTH_SHORT).show();
             }
         });

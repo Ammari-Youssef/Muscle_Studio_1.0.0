@@ -8,16 +8,16 @@
 
     <ImageView
         android:id="@+id/C1imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_width="55dp"
+        android:layout_height="89dp"
         android:layout_gravity="center"
         android:layout_weight="50"
+        android:src="@drawable/coach3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
-        android:src="@drawable/coach3"/>
+        app:layout_constraintVertical_bias="0.13" />
 
     <TextView
         android:id="@+id/coachName"
