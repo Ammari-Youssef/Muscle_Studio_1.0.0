@@ -26,7 +26,8 @@ public class Offer1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent addToRecapOffer = new Intent(Offer1Activity.this , RecapActivity.class);
                 addToRecapOffer.putExtra("Subscription_Offer","Yearly");
-                startActivity(addToRecapOffer);
+                Intent coaches = new Intent(Offer1Activity.this , CoachesActivity.class);
+                startActivity(coaches);
                 Toast.makeText(Offer1Activity.this, "You have chosen the yearly subscription", Toast.LENGTH_SHORT).show();
             }
         });

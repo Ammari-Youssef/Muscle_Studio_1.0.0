@@ -20,13 +20,14 @@
     <ListView
         android:id="@+id/ListViewCoaches"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 
     <Button
         android:id="@+id/NoCoachBtn"
         android:layout_width="match_parent"
-        android:layout_height="139dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
         android:text="Continue without a coach"
 
         />

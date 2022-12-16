@@ -67,7 +67,7 @@ public class RecapActivity extends AppCompatActivity {
         String co = coach_recap.getText().toString();
         String sm = offer_submode.getText().toString();
 
-        Boolean recapdatainserted = db.InsertRecapData(user, sm, co);
+        Boolean recapdatainserted = db.UpdateRecapData(user, sm, co);
 
         if (recapdatainserted == true) {
             Toast.makeText(this, user + " your activities has been saved", Toast.LENGTH_SHORT).show();
