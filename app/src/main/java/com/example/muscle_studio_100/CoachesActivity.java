@@ -96,7 +96,7 @@ public class CoachesActivity extends AppCompatActivity {
             }
         });
 
-//TODO: verifi hadi wach tkhdm
+
         noCoachbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
