@@ -28,11 +28,12 @@ public class CoachesActivity extends AppCompatActivity {
         //Creer les informations
         ArrayList<Coach> arraytest = new ArrayList<>();
 
-        arraytest.add(new Coach(R.drawable.coach1, "Jilali Yahya", "Age:33  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach2, "Hakim Ziach ", "Age:25  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach3, "Joj Gauchiyat", "Age:27  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach4, "Allal el fassi", "Age:21  Prix : 200DH"));
-        arraytest.add(new Coach(R.drawable.coach1, "Jilali Yahya", "Age:33  Prix : 200DH"));
+        arraytest.add(new Coach(R.drawable.coach1, "Jamal Rochdi", "Age:33  Prix : 200DH"));
+        arraytest.add(new Coach(R.drawable.coach2, "Youssef Ghasi ", "Age:25  Prix : 200DH"));
+        arraytest.add(new Coach(R.drawable.coach3, "George Johnson", "Age:27  Prix : 200DH"));
+        arraytest.add(new Coach(R.drawable.coach4, "Yassine Abad", "Age:21  Prix : 200DH"));
+        arraytest.add(new Coach(R.drawable.coach3, "Robert Davis", "Age:33  Prix : 200DH"));
+
 
         //Adaptateur Modifié
         CoachAdapter adapter = new CoachAdapter(this, R.layout.coach_row, arraytest);

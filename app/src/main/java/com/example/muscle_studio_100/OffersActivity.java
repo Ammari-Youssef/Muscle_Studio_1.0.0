@@ -35,16 +35,16 @@ public class OffersActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        String userIntent = intent.getStringExtra("profile");
-        txt.setText("Hi " + userIntent);
+        /*String userIntent = intent.getStringExtra("profile");
+        txt.setText("Hi " + userIntent);*/
 
         //Remplir et affichage la ListView
         ArrayList<Offer> arr = new ArrayList<>();
 
-        arr.add(new Offer("Yearly", "840 MAD"));
-        arr.add(new Offer("Six months", "420MAD"));
-        arr.add(new Offer("Three months", "200MAD"));
-        arr.add(new Offer("Monthly", "70MAD"));
+        arr.add(new Offer("Yearly", "900 MAD"));
+        arr.add(new Offer("Six months", "480MAD"));
+        arr.add(new Offer("Three months", "270MAD"));
+        arr.add(new Offer("Monthly", "100MAD"));
 
 
         OfferAdapter ad = new OfferAdapter(this, R.layout.offer_item, arr);

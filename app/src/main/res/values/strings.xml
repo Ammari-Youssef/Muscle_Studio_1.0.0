@@ -6,22 +6,22 @@
     </string-array>
 
     <string name="CoachInterfaceDesc">There are our five men coaches for now ,we will have women soon </string>
-    <string name="coach1">Jamal rochdi</string>
-    <string name="coach2">Jamal rochdi</string>
-    <string name="coach3">Jamal rochdi</string>
-    <string name="coach4">Jamal rochdi</string>
-    <string name="coach5">Jamal rochdi</string>
+    <string name="coach1">Jamal Rochdi</string>
+    <string name="coach2">Youssef Ghasi</string>
+    <string name="coach3">George Johnson</string>
+    <string name="coach4">Yassine Abad</string>
+    <string name="coach5">Robert Davis</string>
 
     <string name="desc_coach1">Jamal is the ideal coach for building pectoralis muscles .</string>
-    <string name="desc_coach2"></string>
-    <string name="desc_coach3"></string>
-    <string name="desc_coach4"></string>
-    <string name="desc_coach5"></string>
+    <string name="desc_coach2">Best fitness instructor for accountability: Personal trainer .</string>
+    <string name="desc_coach3">Best fitness instructor for weight loss: Specialty instructor .</string>
+    <string name="desc_coach4">Developing fitness training programs based on the client’s needs .</string>
+    <string name="desc_coach5">Monitoring the progress of clients, adjusting the programs as necessary .</string>
 
-    <string name="offer1_desc">This offer save you 10% if you renew the subscription every month during a year</string>
-    <string name="offer2_desc">This offer save you 5% if you renew the subscription every month in a half year</string>
-    <string name="offer3_desc">This offer save you 3% if you renew the subscription every month for Three months</string>
-    <string name="offer4_desc">Subscribe to MuscleStudio for 70MAD a month </string>
+    <string name="offer1_desc">This offer save you 25% if you renew the subscription every month during a year .</string>
+    <string name="offer2_desc">This offer save you 15% if you renew the subscription every month in a half year .</string>
+    <string name="offer3_desc">This offer save you 10%% if you renew the subscription every month for Three months .</string>
+    <string name="offer4_desc">This offer save you 5% since we have opened our gym recently .</string>
 
 
 

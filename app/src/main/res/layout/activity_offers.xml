@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OffersActivity"
-
     android:layout_weight="100"
-    >
+    android:background="@drawable/back"
+
+    tools:context=".OffersActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hi user "
+        android:text="Choose an offer : "
 
         android:textSize="36sp"
         android:textStyle="bold"
@@ -28,14 +28,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="16dp"
         android:divider="@null"
+
         android:dividerHeight="8dp"
-
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:layout_marginTop="16dp"/>
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

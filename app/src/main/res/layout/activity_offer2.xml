@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/back"
     tools:context=".Offer2Activity">
 
 
     <TextView
         android:id="@+id/Nomsub"
-
+        android:textColor="@color/white"
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +26,7 @@
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:textColor="@color/white"
         android:layout_gravity="center"
         android:src="@drawable/mo6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +38,7 @@
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:layout_marginTop="16dp"
         android:text="Description : "
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/offer1_desc"
-
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DescTxtView" />
