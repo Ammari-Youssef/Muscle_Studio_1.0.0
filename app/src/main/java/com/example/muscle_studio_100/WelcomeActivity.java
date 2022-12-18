@@ -14,8 +14,9 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_welcome);
 
+        //Commencer l'app
         ProgressBar p = findViewById(R.id.progressBar);
         start = findViewById(R.id.Start);
         start.setOnClickListener(new View.OnClickListener() {

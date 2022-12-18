@@ -3,6 +3,7 @@ package com.example.muscle_studio_100;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -15,6 +16,8 @@ import android.widget.Toast;
 import com.google.android.material.snackbar.Snackbar;
 
 public class LoginActivity extends AppCompatActivity {
+
+
     //Declaration des composants d'activité :
     TextView signIntxt , forgotPwd ;
     Button LogInbtn ;
@@ -110,4 +113,5 @@ public class LoginActivity extends AppCompatActivity {
         input.setError(s);
         input.requestFocus();
     }
+
 }
