@@ -75,7 +75,7 @@ public class RegisterActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(this, "Registration failed", Toast.LENGTH_SHORT).show();
                         Toast.makeText(this, "Account created", Toast.LENGTH_SHORT).show();
-                        //p.setVisibility(View.VISIBLE);
+
                     }
                 } else {
                     Toast.makeText(this, "User already exists , please sign in !", Toast.LENGTH_SHORT).show();
